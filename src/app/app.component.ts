@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cwd-todo-list';
+  title = 'Todo App';
+  VideoLnk = "https://youtu.be/0LhBvp8qpro?t=3302"
+  constructor() {  }
 }

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card mt-3 ml-3" style="
+width: 18rem; 
+float: left;
+background-color: lightblue;
+">
+        <div class="card-body">
+            <h5 class="card-title text-center " style="
+            font-family: 'New Tegomin', serif;">
+                <b> {{todo.title}}</b>
+            </h5>
+            <p class="card-text ">Desc : {{todo.desc}}.<br />
+                <a href="#" class="btn btn-danger mt-3" (click)="DeleteTodo(todo)" >Delete</a>
+        </div>
+    </div>
+</div>
