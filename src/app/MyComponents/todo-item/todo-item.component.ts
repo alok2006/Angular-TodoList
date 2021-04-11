@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output , EventEmitter} from '@angular/core';
 import { Todo } from 'src/app/Todo';
-
+import {CommonModule} from '@angular/common'
 @Component({
   selector: 'app-todo-item',
   templateUrl: './todo-item.component.html',

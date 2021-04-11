@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/Todo';
-
+import {CommonModule} from '@angular/common'
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
