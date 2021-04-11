@@ -7,10 +7,17 @@ background-color: lightblue;
         <div class="card-body">
             <h5 class="card-title text-center " style="
             font-family: 'New Tegomin', serif;">
-                <b> {{todo.title}}</b>
+                <b [ngClass]="{'strike': !todo.active}"> {{todo.title}}</b>
             </h5>
-            <p class="card-text ">Desc : {{todo.desc}}.<br />
-                <a href="#" class="btn btn-danger mt-3" (click)="DeleteTodo(todo)" >Delete</a>
+            <p class="card-text ">Desc : {{todo.desc}}</p>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" (click)="onCheckClick(todo)" class="form-check-input" name="check" id="check"
+                        value="checkedValue" checked>
+                    Mark As Done
+                </label>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" (click)="DeleteTodo(todo)">Delete</a>
         </div>
     </div>
 </div>
